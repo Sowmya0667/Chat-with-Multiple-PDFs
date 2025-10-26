@@ -117,6 +117,13 @@ streamlit run app.py
 
 Then open your browser and go to **[http://localhost:8501/](http://localhost:8501/)**.
 
+
+
+![Chat with Multiple PDFs UI](https://github.com/Sowmya0667/Chat-with-Multiple-PDFs/blob/main/assests/Screenshot.png)
+
+
+
+
 ---
 
 ## 💬 Usage Guide
@@ -134,6 +141,8 @@ Then open your browser and go to **[http://localhost:8501/](http://localhost:850
 ```
 📦 chat-with-multiple-pdfs
 │
+├── assets
+|   ├── screenshot.png          # UI Interface 
 ├── app.py                      # Main Streamlit app
 ├── htmlTemplates.py            # Custom chat UI templates (bot/user)
 ├── requirements.txt            # Python dependencies
@@ -163,15 +172,6 @@ Then open your browser and go to **[http://localhost:8501/](http://localhost:850
 | `qwen/qwen3-14b:free`                    | High-quality general-purpose model  |
 
 ---
-
-## 📸 App Preview
-
-*(You can add a screenshot or GIF here later)*
-
-```
-📄 Upload PDFs → 🧠 Process → 💬 Chat → 🔄 Continue Contextual Conversation
-```
-
 
 ## 🪪 License
 
