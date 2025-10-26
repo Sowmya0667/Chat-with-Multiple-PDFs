@@ -45,7 +45,7 @@ from langchain_community.embeddings import HuggingFaceEmbeddings
 from langchain_community.vectorstores import FAISS
 
 def get_vectorstore(text_chunks):
-    model_path = r"C:\Users\sowmy\OneDrive\Desktop\Projects\model\all-MiniLM-L6-v2"
+    model_path = r"C:\Users\sowmy\all-MiniLM-L6-v2" # Download the model locally
 
     embeddings = HuggingFaceEmbeddings(model_name=model_path)
 
@@ -121,7 +121,6 @@ def clear_chat_history():
 def main():
     load_dotenv() 
     
-    # --- THIS IS THE FIX ---
     st.set_page_config(page_title="Chat with Multiple PDFs", page_icon=":books:")
     
     st.write(css, unsafe_allow_html=True)
@@ -131,7 +130,6 @@ def main():
     if "chat_history" not in st.session_state:
         st.session_state.chat_history = []
 
-    # --- THIS IS THE OTHER PART OF THE FIX ---
     st.header("Chat with Your PDF Documents :books:")
     
     user_question = st.text_input("Ask a question about your documents:")
@@ -209,4 +207,5 @@ def main():
 
 
 if __name__ == "__main__":
+
     main()
