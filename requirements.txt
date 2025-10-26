@@ -1,0 +1,13 @@
+streamlit
+python-dotenv
+PyPDF2
+langchain==0.3.27
+langchain_community== 0.3.29
+faiss-cpu
+sentence-transformers
+langchain-huggingface==0.3.1
+#openrouter
+langchain-text-splitters==0.3.11
+langchain-openai==0.3.33
+langsmith ==0.4.28
+
